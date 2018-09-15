@@ -18,21 +18,20 @@ body{
 	font-weight:300;
 }
 
-h1, h2, h3, h4{
-	font-family: 'Fira Sans', sans-serif;
+h1{
+	font-family: helvetica;
+	font-weight: 700;
+
+}
+h2, h3, h4{
+	font-family: 'Roboto', sans-serif;
 	font-weight:700;
 }
 
 h1{
 	letter-spacing:0.3em;
-	color:#ffffff;
+	color: #ffffff;
 	text-align:center;
-	border:7px solid #fff;
-	width:30%;
-	margin:2em auto 0 auto;
-
-
-
 }
 
 h2{
@@ -40,27 +39,25 @@ h2{
 	color:rgba(255,255,255);
 	padding:0.2em 0;
 	text-align:center;
-
 }
 
 h3{
 	letter-spacing:0.2em;
-	color:rgb(255, 255, 255);
+	color:rgb(255,255,255);
 	padding:2em 0 0.6em 0;
 	text-align:center;
-
-
 }
 
 h4{
 	letter-spacing: 0.1em;
 }
+
 h5{
 	font-style: italic;
-	font-weight: left;
-	font-weight: 600;
-
+	font-weight:left;
+	font-weight:600;
 }
+
 #sub{
 	font-weight:700;
 }
@@ -71,19 +68,19 @@ header{
 	width:98%;
 	top:40%;
 	position: absolute;
-	text-align: center;
+	text-align:center;
 	z-index:9;
-	color:white
-	height:auto;
-
+	color:white;
 }
 
 @media screen and (max-width: 980px){
 	header{top:20%;}
+	header svg{height: 75px; width:auto;}
 }
 
 @media screen and (max-width: 760px){
-	header{top:20%;}
+	header{top:5%;}
+	header svg{display:none;}
 }
 
 video{
@@ -95,18 +92,16 @@ video{
 
 #somos{
 	width:100%;
-	margin-bottom:1%;
+	padding-top: 1.5%;
 	}
 
 
 
 .dupla{
-	width:46%;
-	padding:2%;
-	float:left;
-	margin-bottom:1%;
-
-
+	box-sizing: border-box;
+		width:50%;
+		padding:2%;
+		float:left;
 
 	}
 
@@ -122,13 +117,13 @@ video{
 }
 
 .primera{
-	min height:200px;
+	height:400px;
 	text-align:left;
 	background-image:url('media/dupla1.jpg');
-	background-position:right;
+	background-position:top right;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
-
+}
 
 
 }
@@ -141,10 +136,10 @@ video{
 .primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal}
 
 .segunda{
-	min-height:200px;
+  height:400px;
 	text-align:right;
 	background-image:url('media/dupla2.jpg');
-	background-position:left;
+	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 
@@ -160,15 +155,13 @@ video{
 
 #somos{
 	height: 90%;
-
+	width:100%;
+	padding-top: 1.5%;
 	}
 	#somos hr{
 
 	clear:both;
-	border:2px solid #fff;
-	width:10%;
-	margin:2em auto 0 auto;
-
+	border:none;
 	}
 
 #portafolio{
@@ -176,9 +169,6 @@ video{
 	padding-bottom:1%;
 }
 
-#portafolio hr{
-		border:2px solid white;
-}
 
 .item {
 	width:23%;
@@ -220,29 +210,29 @@ video{
 }
 
 footer{
+	box-sizing: border-box;
 	width:100%;
-	padding:3em 0 1em 0;
+	padding:1em 0;
 	text-align:center;
-	font-family: 'fira sans', sans-serif;
-	font-weight:600;
+	background:white;
+	border: .2em solid rgba(0, 0, 0, 1);
 }
 
 footer p{
 	text-transform:uppercase;
-	letter-spacing:0.2em;
-	font-size:0.9em;
-	}
+	margin-bottom: 1em;
+}
 
 footer hr{
-	border:2px solid #fff;
+	border: .1em dashed rgba(0, 0, 0, 1);
 	width:10%;
-	margin:2em auto 0 auto;
-	}
+	margin:1em auto 0 auto;
+}
 
 @media screen and (orientation: portrait){
 
 	.dupla{
-		width:96%;
+		width:100%;
 		padding:2%;
 		float:left;
 	}
